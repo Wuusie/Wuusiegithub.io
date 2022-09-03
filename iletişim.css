@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-image: url(1200415.png);
+    background-size: cover;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+/*header start*/
+header{
+    height: 100px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.06)
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+}
+
+header nav .logo a{
+    justify-content: space-between;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    column-gap: 30px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    transition: color .25s ease
+}
+
+nav ul li a:hover{
+    color: #00f9b9;
+}
+
+nav .menu{
+    align-items: center;
+    column-gap: 28px;
+    display: flex;
+}
+
+nav .menu .menubutton{
+    color: #00f9b9;
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.08);
+    padding: 12px 24px;
+    border-radius: 56px;
+    transition: all .25s ease
+}
+
+nav .menu .menubutton:hover{
+    background-color: #00f9b9;
+    color: white;
+}
+/*header end*/
+
+/* Section Start */
+
+.content{
+    color: white;
+    height: calc(100vh - 100px);
+    padding-top: 100px;
+}
+
+.content .medya{
+}
+
+/* Section End */
+
+/*Responsive Start*/
+    @media(max-width:576px) {
+        .container {
+            width: 100%;
+            padding-left: 12px;
+            padding-right: 12px;
+        }
+
+        .menu ul{
+            column-gap: 20;
+        }
+
+        .menu .menubutton{
+            display: none;
+        }
+
+        .content{
+            padding-top: 50px;
+        }
+
+        .content h1{
+            font-size: 36px;
+        }
+
+        .content p{
+            font-size: 16px;
+        }
+
+        .content .links{
+            flex-direction: col;
+        }
+        
+        .content .links a{
+            padding: 14px;
+        }
+    }
+/*Responsive End*/
