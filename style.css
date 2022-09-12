@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url("1200415.png");
+    background-size: cover;
+}
+
+a{
+    color: white;
+}
+
+h1{
+    color: white;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+/*!Header Start*/
+
+header{
+    height: 100px;
+    border-bottom: 2px solid rgba(150, 150, 150, 0.6);
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+header nav .logoyazı a{
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+header nav .yenile button{
+    border-color: #00f9b9;
+    color: #00f9b9;
+    font-weight: 600;
+    font-size: 20px;
+    border-width: 2px;
+    background: none;
+    width: 145px;
+    height: 50px;
+    border-radius: 30px;
+    transition: 0.15s;
+    border-style: solid
+}
+
+header nav .yenile button:hover{
+    background-color: #00f9b9;
+    color: white;
+    transition: 0.15s;
+}
+
+/*!Header End*/
+
+/*!Section Start*/
+
+.portfol{
+    width: 35%;
+    margin-top: auto;
+}
+
+.portfol a{
+    color: rgb(124, 124, 124);
+}
+
+.content{
+    height: calc(100vh - 100px);
+    padding-top: 200px;
+}
+
+.content h1{
+    font-size: 30px;
+}
+
+/*!Section End*/
+
+/*!Responsive Start*/
+
+@media(max-width:444px){
+    .container{
+        width: 100%;
+    }
+
+    .content{
+        padding-top: 40px;
+        text-align: center;
+    }
+
+    .content h1{
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .portfol{
+        width: auto;
+    }
+
+}
+
+/*!Responsive End*/
